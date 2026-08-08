@@ -37,7 +37,7 @@ cards.forEach(card => {
         overlay.classList.remove("show");
     });
 });
-// News items dataset
+
 const newsData = {
     1: {
         date: "15 June, 2026",
@@ -56,7 +56,7 @@ const newsData = {
     }
 };
 
-// Function to open popup modal
+
 function openNewsModal(newsId) {
     const modal = document.getElementById("newsModal");
     const modalBody = document.getElementById("modalBody");
@@ -86,13 +86,12 @@ function openNewsModal(newsId) {
     modal.style.display = "flex";
 }
 
-// Function to close popup modal
 function closeNewsModal() {
     const modal = document.getElementById("newsModal");
     modal.style.display = "none";
 }
 
-// Close modal when clicking outside the box
+
 window.addEventListener("click", function (e) {
     const modal = document.getElementById("newsModal");
     if (e.target === modal) {
@@ -106,10 +105,9 @@ document.addEventListener('DOMContentLoaded', function () {
         header.addEventListener('click', function () {
             const currentItem = this.parentElement;
 
-            // Toggle current item
+
             currentItem.classList.toggle('active');
 
-            // Close other items (optional: remove if you want multiple open at once)
             document.querySelectorAll('.faq-item').forEach(item => {
                 if (item !== currentItem) {
                     item.classList.remove('active');
