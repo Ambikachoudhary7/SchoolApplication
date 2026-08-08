@@ -2017,7 +2017,7 @@ body {
 }
 
 .faq-item.active .faq-body {
-    max-height: 200px; /* Adjust according to text length */
+    max-height: 200px;
     padding: 0 24px 20px 24px;
     border-top: 1px solid #f1f5f9;
 }
@@ -2028,6 +2028,7 @@ body {
     line-height: 1.6;
     margin: 12px 0 0 0;
 }
+
 footer {
     background: #10224d;
     color: white;
