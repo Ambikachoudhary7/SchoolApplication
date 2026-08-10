@@ -130,6 +130,21 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
+nav ul li a.nav-link {
+    text-decoration: none;
+    color: #334155;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.nav-link.active {
+    color: #2563eb;
+    background-color: #eff6ff;
+    font-weight: 700;
+}
+
 .modal-overlay {
     display: none;
     position: fixed;

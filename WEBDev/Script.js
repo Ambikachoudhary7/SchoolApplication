@@ -1,3 +1,14 @@
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+        // Sabhi links se active class hatao
+        navLinks.forEach(item => item.classList.remove('active'));
+
+        // Click hue link par active class add karo
+        this.classList.add('active');
+    });
+});
 const cards = document.querySelectorAll(".topper-card");
 
 cards.forEach(card => {
