@@ -2,6 +2,7 @@ const cards = document.querySelectorAll(".topper-card");
 
 cards.forEach(card => {
     const overlay = card.querySelector(".hover-overlay");
+    if (!overlay) return;
 
     card.addEventListener("mouseenter", (e) => {
         const rect = card.getBoundingClientRect();
@@ -41,31 +42,32 @@ cards.forEach(card => {
 const newsData = {
     1: {
         date: "15 June, 2026",
-        title: "Admissions Open for 2026–27",
-        content: "Rose Public School is pleased to announce that admissions for the academic session 2026–27 are now officialy open for Pre-Nursery through Class 9. Parents can apply online through our portal or visit the campus administration office. Seats are allotted on a first-come, first-served basis."
+        title: "Admissions Open for Session 2026–27",
+        content: "Rose Public School is pleased to announce that admissions for the academic session 2026–27 are officially open for Pre-Nursery through Class 9. Parents can apply online through our registration portal or collect forms directly from the administration campus."
     },
     2: {
         date: "10 June, 2026",
-        title: "Annual Sports Meet 2026",
-        content: "Our annual sports day is scheduled to take place at the main athletic stadium. Events will include track and field, inter-house football matches, relay races, and gymnastics displays. All parents and guardians are cordially invited to cheer for our young athletes."
+        title: "Annual Inter-School Sports Meet",
+        content: "Our annual sports festival will take place at the main athletic stadium next week. Events will feature track and field sprints, inter-house football matches, relay races, gymnastics, and award presentations."
     },
     3: {
         date: "05 June, 2026",
-        title: "Science Exhibition Winners",
-        content: "Our Class 10 senior science team secured 1st place in the Regional Inter-School Science & Tech Exhibition with their project on renewable energy and automated irrigation systems. Hearty congratulations to the winning team and their faculty mentors!"
+        title: "Science Exhibition Regional Winners",
+        content: "Our Class 10 senior team secured 1st position in the Regional Science & Technology Exhibition with their project on self-sustaining solar irrigation and automated agricultural sensors."
     }
 };
-
 
 function openNewsModal(newsId) {
     const modal = document.getElementById("newsModal");
     const modalBody = document.getElementById("modalBody");
 
+    if (!modal || !modalBody) return;
+
     if (newsId === 'all') {
         modalBody.innerHTML = `
-            <span style="color: #1d4ed8; font-size: 14px; font-weight: 600;">ANNOUNCEMENTS</span>
-            <h2 style="font-size: 28px; color: #0b1a30; margin: 10px 0 20px;">All News & Updates</h2>
-            <ul style="line-height: 2; color: #64748b; padding-left: 20px;">
+            <span style="color: #1d4ed8; font-size: 13px; font-weight: 700; letter-spacing: 1px;">ANNOUNCEMENTS</span>
+            <h2 style="font-size: 24px; color: #0f172a; margin: 8px 0 16px;">All News & Updates</h2>
+            <ul style="line-height: 2; color: #64748b; padding-left: 18px;">
                 <li><strong>15 June, 2026:</strong> Admissions Open for 2026–27</li>
                 <li><strong>10 June, 2026:</strong> Annual Sports Meet 2026</li>
                 <li><strong>05 June, 2026:</strong> Science Exhibition Winners</li>
@@ -75,11 +77,11 @@ function openNewsModal(newsId) {
     } else if (newsData[newsId]) {
         const item = newsData[newsId];
         modalBody.innerHTML = `
-            <span style="color: #1d4ed8; font-size: 14px; font-weight: 600;">
+            <span style="color: #1d4ed8; font-size: 13px; font-weight: 600;">
                 <i class="fa-regular fa-calendar"></i> ${item.date}
             </span>
-            <h2 style="font-size: 26px; color: #0b1a30; margin: 12px 0 16px;">${item.title}</h2>
-            <p style="color: #64748b; font-size: 16px; line-height: 1.7;">${item.content}</p>
+            <h2 style="font-size: 22px; color: #0f172a; margin: 10px 0 14px;">${item.title}</h2>
+            <p style="color: #64748b; font-size: 15px; line-height: 1.7;">${item.content}</p>
         `;
     }
 
@@ -88,31 +90,20 @@ function openNewsModal(newsId) {
 
 function closeNewsModal() {
     const modal = document.getElementById("newsModal");
-    modal.style.display = "none";
+    if (modal) {
+        modal.style.display = "none";
+    }
 }
-
 
 window.addEventListener("click", function (e) {
     const modal = document.getElementById("newsModal");
-    if (e.target === modal) {
+    if (modal && e.target === modal) {
         modal.style.display = "none";
     }
 });
-document.addEventListener('DOMContentLoaded', function () {
-    const faqHeaders = document.querySelectorAll('.faq-header');
 
-    faqHeaders.forEach(header => {
-        header.addEventListener('click', function () {
-            const currentItem = this.parentElement;
-
-
-            currentItem.classList.toggle('active');
-
-            document.querySelectorAll('.faq-item').forEach(item => {
-                if (item !== currentItem) {
-                    item.classList.remove('active');
-                }
-            });
-        });
-    });
+window.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+        closeNewsModal();
+    }
 });
