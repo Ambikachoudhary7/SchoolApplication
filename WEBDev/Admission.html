@@ -4,21 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="Admission.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Admission Session</title>
+    <title>Admissions - Rose Public School</title>
 </head>
 
 <body>
     <header class="site-header">
         <nav class="nav-container">
-            <a href="index.html" class="logo">Rose Public School</a>
+            <a href="index.html" class="logo-wrapper">
+                <img src="logo.jpg" alt="Rose Public School Logo" class="site-logo">
+                <span class="logo-text">Rose Public School</span>
+            </a>
+
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="academics.html" class="active">Academics</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="About.html" class="nav-link">About</a></li>
+                <li><a href="Admission.html" class="nav-link">Admission</a></li>
+                <li><a href="Acadmics.html" class="active">Academics</a></li>
+                <li><a href="#Faculty" class="nav-link">Faculty</a></li>
+                <li><a href="#Gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -88,7 +96,8 @@
                     <form class="enquiry-form" action="#" method="POST">
                         <div class="form-group">
                             <label for="studentName">Student Name *</label>
-                            <input type="text" id="studentName" placeholder="Student Full Name" required>
+                            <input type="text" id="studentName" name="studentName" placeholder="Student Full Name"
+                                required>
                         </div>
 
                         <div class="form-group">

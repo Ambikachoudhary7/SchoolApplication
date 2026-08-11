@@ -2,10 +2,8 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach(link => {
     link.addEventListener('click', function () {
-        // Sabhi links se active class hatao
         navLinks.forEach(item => item.classList.remove('active'));
 
-        // Click hue link par active class add karo
         this.classList.add('active');
     });
 });
@@ -117,4 +115,51 @@ window.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
         closeNewsModal();
     }
+});
+
+// Admission
+document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const header = item.querySelector('.faq-header');
+
+        header.addEventListener('click', () => {
+            // Agar aap chahte hain ki ek baar me sirf EK hi FAQ khule (Baaki close ho jayein):
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+
+            // Active class toggling (Open / Close logic)
+            item.classList.toggle('active');
+        });
+    });
+});
+
+// Admission regarding message
+document.querySelector('.enquiry-form').addEventListener('submit', function (e) {
+    e.preventDefault(); 
+
+    const studentName = document.getElementById('studentName').value;
+    const admissionClass = document.getElementById('admissionClass').value;
+    const parentName = document.getElementById('parentName').value;
+    const address = document.getElementById('address').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+
+    const schoolWhatsAppNumber = "6205858139";
+    
+    const message = `*New Admission Enquiry*%0A%0A` +
+        `*Student Name:* ${studentName}%0A` +
+        `*Class:* ${admissionClass}%0A` +
+        `*Parent Name:* ${parentName}%0A` +
+        `*Address:* ${address}%0A` +
+        `*Phone:* ${phone}%0A` +
+        `*Email:* ${email}`;
+
+    // WhatsApp URL open karna
+    const whatsappURL = `https://wa.me/${schoolWhatsAppNumber}?text=${message}`;
+    window.open(whatsappURL, '_blank');
 });
