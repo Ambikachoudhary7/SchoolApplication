@@ -99,16 +99,34 @@ nav ul {
     gap: 24px;
 }
 
-nav ul li a {
-    color: rgba(255, 255, 255, 0.9);
+.nav-links a.nav-link,
+nav ul li a.nav-link {
+    color: #ffffff !important;
     text-decoration: none;
-    font-weight: 500;
     font-size: 0.95rem;
-    transition: color 0.2s ease;
+    font-weight: 500;
+    padding: 6px 0;
+    background: transparent !important;
+    transition: color 0.25s ease;
 }
 
-nav ul li a:hover {
-    color: var(--accent);
+.nav-links a.nav-link:hover,
+nav ul li a.nav-link:hover {
+    color: #ffe600 !important;
+    background: transparent !important;
+}
+
+.nav-links a.nav-link.active,
+nav ul li a.nav-link.active {
+    color: #ffe600 !important;
+    font-weight: 700 !important;
+    background: transparent !important;
+}
+
+.nav-links a.nav-link::after,
+nav ul li a.nav-link::after {
+    display: none !important;
+    content: none !important;
 }
 
 .nav-btn {
@@ -128,21 +146,6 @@ nav ul li a:hover {
     background: white;
     color: var(--accent-hover);
     transform: translateY(-2px);
-}
-
-nav ul li a.nav-link {
-    text-decoration: none;
-    color: #334155;
-    /* padding: 8px 14px; */
-    border-radius: 6px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-nav ul li a.nav-link.active {
-    color: #2563eb;
-    background-color: #eff6ff;
-    font-weight: 700;
 }
 
 .modal-overlay {

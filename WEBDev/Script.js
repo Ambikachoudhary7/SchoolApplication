@@ -1,12 +1,3 @@
-const navLinks = document.querySelectorAll('.nav-link');
-
-navLinks.forEach(link => {
-    link.addEventListener('click', function () {
-        navLinks.forEach(item => item.classList.remove('active'));
-
-        this.classList.add('active');
-    });
-});
 const cards = document.querySelectorAll(".topper-card");
 
 cards.forEach(card => {
@@ -140,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Admission regarding message
 document.querySelector('.enquiry-form').addEventListener('submit', function (e) {
-    e.preventDefault(); 
+    e.preventDefault();
 
     const studentName = document.getElementById('studentName').value;
     const admissionClass = document.getElementById('admissionClass').value;
@@ -150,7 +141,7 @@ document.querySelector('.enquiry-form').addEventListener('submit', function (e) 
     const email = document.getElementById('email').value;
 
     const schoolWhatsAppNumber = "6205858139";
-    
+
     const message = `*New Admission Enquiry*%0A%0A` +
         `*Student Name:* ${studentName}%0A` +
         `*Class:* ${admissionClass}%0A` +
