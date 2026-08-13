@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Rose Public School</title>
+
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+
+            <a href="index.html" class="logo-wrapper">
+                <img src="logo.jpg" alt="Rose Public School Logo" class="site-logo">
+                <span class="logo-text">ROSE PUBLIC SCHOOL</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="About.html" class="nav-link">About</a></li>
+                <li><a href="Admission.html" class="nav-link">Admission</a></li>
+                <li><a href="Acadmics.html" class="nav-link">Academics</a></li>
+                <li><a href="Faculty.html" class="nav-link">Faculty</a></li>
+                <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="Facilities.html" class="nav-link">Facilities</a></li>
+                <li><a href="Contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <a href="Admission.html" class="apply-btn">Apply Now</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with us for admissions, queries, or feedback.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container contact-wrapper">
+
+            <div class="contact-info">
+                <span class="sub-title">GET IN TOUCH</span>
+                <h2>Contact Information</h2>
+                <p class="info-desc">Our administrative office is open during the school week to assist you with any
+                    inquiries.</p>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>School Address</h4>
+                            <p>Rose Public School Campus, Main Road, Darbhanga, Bihar 846004, India</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Phone Number</h4>
+                            <p>(+91) 9876543210</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Email Address</h4>
+                            <p>info@rosepublicschool.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon-box">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Working Hours</h4>
+                            <p>Mon - Sat: 8:00 AM - 3:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-card">
+                <h3>Send us a Message</h3>
+
+                <form id="whatsapp-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+91 1234567890">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" required
+                                style="width: 100%; padding: 0.85rem 1rem; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 0.9rem; color: #0f172a; outline: none;">
+                                <option value="" disabled selected>Select Subject</option>
+                                <option value="Admission">Admission</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="send-btn"
+                        style="background-color: #25D366; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Send via WhatsApp
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <section class="map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.45731234567!2d85.895!3d26.155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39edb83a81be946b%3A0x30b97114ae851f68!2sRose%20Public%20School!5e0!3m2!1sen!2sin!4v1700000000000"
+            width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-wrapper">
+
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <img src="logo.jpg" alt="Rose Public School Logo">
+                </div>
+                <p class="footer-desc">
+                    Nurturing minds, building character, and empowering the next generation of leaders through quality
+                    education and holistic development.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="About.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="Acadmics.html"><i class="fa-solid fa-chevron-right"></i> Academics</a></li>
+                    <li><a href="Admission.html"><i class="fa-solid fa-chevron-right"></i> Admissions</a></li>
+                    <li><a href="Gallery.html"><i class="fa-solid fa-chevron-right"></i> Photo Gallery</a></li>
+                    <li><a href="Contact.html"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-location-dot"></i> Kathalbari, Darbhanga, Bihar 846004, India</p>
+                    <p><i class="fa-solid fa-phone"></i> (+91) 9876543210</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@rosepublicschool.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Rose Public School. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('whatsapp-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const phoneNumber = "6205858139";
+
+            const name = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value; // Admission or Feedback
+            const message = document.getElementById('message').value;
+
+            const whatsappMessage = `*New ${subject} Inquiry*%0A%0A` +
+                `*Name:* ${encodeURIComponent(name)}%0A` +
+                `*Email:* ${encodeURIComponent(email)}%0A` +
+                `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                `*Subject:* ${encodeURIComponent(subject)}%0A` +
+                `*Message:* ${encodeURIComponent(message)}`;
+
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+
+</html>

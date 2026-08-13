@@ -36,12 +36,13 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
 .nav-container {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 2 rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,9 +87,30 @@ body {
     transition: background-color 0.2s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-    background-color: rgba(255, 255, 255, 0.2);
+.nav-links a.nav-link:hover,
+.nav-links a.nav-link.active {
+    color: #ffe600 !important;
+    font-weight: 700 !important;
+    background: transparent !important;
+}
+
+.nav-links a.nav-link::after,
+.nav-links a.nav-link::before {
+    display: none !important;
+    content: "" !important;
+}
+.apply-btn {
+    background-color: #f59e0b;
+    color: #0f172a !important;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.apply-btn:hover {
+    background-color: #d97706;
 }
 
 .about-hero {

@@ -116,20 +116,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const header = item.querySelector('.faq-header');
 
         header.addEventListener('click', () => {
-            // Agar aap chahte hain ki ek baar me sirf EK hi FAQ khule (Baaki close ho jayein):
             faqItems.forEach(otherItem => {
                 if (otherItem !== item) {
                     otherItem.classList.remove('active');
                 }
             });
 
-            // Active class toggling (Open / Close logic)
             item.classList.toggle('active');
         });
     });
 });
 
-// Admission regarding message
 document.querySelector('.enquiry-form').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -150,7 +147,6 @@ document.querySelector('.enquiry-form').addEventListener('submit', function (e) 
         `*Phone:* ${phone}%0A` +
         `*Email:* ${email}`;
 
-    // WhatsApp URL open karna
     const whatsappURL = `https://wa.me/${schoolWhatsAppNumber}?text=${message}`;
     window.open(whatsappURL, '_blank');
 });
