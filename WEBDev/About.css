@@ -6,15 +6,6 @@
     z-index: 1000;
 }
 
-.nav-container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0.8rem 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo-wrapper {
     display: flex;
     align-items: center;
@@ -32,7 +23,7 @@
 .logo-text {
     font-size: 1.35rem;
     font-weight: 700;
-    color: #047857;
+    color: white;
     letter-spacing: -0.3px;
 }
 

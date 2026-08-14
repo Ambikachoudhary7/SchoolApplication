@@ -25,14 +25,6 @@ body {
     width: 100%;
 }
 
-.nav-container {
-    width: 100%;
-    padding: 0.8rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo-wrapper {
     display: flex;
     align-items: center;

@@ -108,7 +108,6 @@ window.addEventListener("keydown", function (e) {
     }
 });
 
-// Admission
 document.addEventListener('DOMContentLoaded', () => {
     const faqItems = document.querySelectorAll('.faq-item');
 

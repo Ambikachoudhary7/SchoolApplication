@@ -661,7 +661,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* Responsive Styles */
 @media (max-width: 900px) {
     .message-card {
         flex-direction: column;
