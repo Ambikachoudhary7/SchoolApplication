@@ -86,7 +86,8 @@ body {
     background-color: #0b6b47;
     color: #ffffff;
     text-align: center;
-    padding: 3.5rem 1.5rem 4.5rem 1.5rem;
+    /* padding: 3.5rem 1.5rem 4.5rem 1.5rem; */
+    padding: 7rem 1.5rem 4rem 1.5rem;
 }
 
 .hero-section {
@@ -110,7 +111,6 @@ body {
     font-weight: 400;
 }
 
-/* --- Facility Card Section --- */
 .facilities-section {
     padding: 3.5rem 0 5rem 0;
     background-color: #ffffff;

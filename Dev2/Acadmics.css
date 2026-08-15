@@ -1,0 +1,310 @@
+/* ==========================================
+   ACADEMICS PAGE SPECIFIC STYLES ONLY
+   (Header, Nav, Typography & Footer are in common.css)
+   ========================================== */
+
+/* Hero Section */
+.academics-hero {
+    background-color: #0b6b47;
+    color: #ffffff;
+    text-align: center;
+    padding: 7rem 1.5rem 4rem 1.5rem;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    max-width: 650px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* Academic Programs / Divisions */
+.programs-section {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.program-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.program-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    border-color: #0b6b47;
+}
+
+.program-card-header {
+    background-color: #f8fafc;
+    padding: 1.8rem 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.program-icon {
+    width: 55px;
+    height: 55px;
+    background-color: #e6f4ea;
+    color: #0b6b47;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto 1rem auto;
+}
+
+.program-card-header h3 {
+    font-size: 1.3rem;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.program-card-header span {
+    font-size: 0.82rem;
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.program-card-body {
+    padding: 1.8rem 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.program-card-body p {
+    font-size: 0.92rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.program-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.program-features li {
+    font-size: 0.88rem;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.program-features li i {
+    color: #0b6b47;
+    font-size: 0.8rem;
+}
+
+/* Departments / Subjects Grid */
+.departments-section {
+    padding: 4rem 0 5rem 0;
+    background-color: #f8fafc;
+}
+
+.dept-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.dept-card {
+    background: #ffffff;
+    padding: 1.8rem 1.2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.dept-card:hover {
+    transform: translateY(-4px);
+    border-color: #0b6b47;
+}
+
+.dept-card i {
+    font-size: 2rem;
+    color: #f59e0b;
+    margin-bottom: 0.8rem;
+}
+
+.dept-card h4 {
+    font-size: 1.05rem;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.dept-card p {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Academic Methodology / Highlights */
+.methodology-section {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.methodology-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.methodology-text h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.methodology-text p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.methodology-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.methodology-list li {
+    font-size: 0.92rem;
+    color: #0f172a;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.methodology-list li i {
+    color: #0b6b47;
+}
+
+/* Academic Calendar / Resources Table */
+.calendar-section {
+    padding: 4rem 0 5rem 0;
+    background-color: #f8fafc;
+}
+
+.calendar-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.calendar-table th {
+    background-color: #0b6b47;
+    color: #ffffff;
+    padding: 1rem 1.2rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.calendar-table td {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+.calendar-table tr:last-child td {
+    border-bottom: none;
+}
+
+.calendar-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.download-link {
+    color: #0b6b47;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease;
+}
+
+.download-link:hover {
+    color: #085236;
+    text-decoration: underline;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+    .programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dept-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .methodology-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .programs-grid,
+    .dept-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calendar-card {
+        padding: 1rem;
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,337 @@
+/* ==========================================
+   HOME PAGE (INDEX) SPECIFIC STYLES ONLY
+   (Header, Nav, Typography & Footer are in common.css)
+   ========================================== */
+
+/* Hero Section */
+.hero-section {
+    background-color: #0b6b47;
+    color: #ffffff;
+    padding: 8rem 1.5rem 5rem 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    background-color: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 1.2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.hero-cta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background-color: #f59e0b;
+    color: #0f172a;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #d97706;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 26px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Quick Stats Bar */
+.stats-section {
+    background-color: #ffffff;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 3rem;
+}
+
+.stats-grid {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.stat-item h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #0b6b47;
+    margin-bottom: 0.2rem;
+}
+
+.stat-item p {
+    font-size: 0.88rem;
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Welcome / Director Section */
+.welcome-section {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.welcome-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.welcome-img {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.welcome-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.welcome-text h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.welcome-text p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+/* Features Grid */
+.features-section {
+    padding: 4rem 0 5rem 0;
+    background-color: #f8fafc;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #0b6b47;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #e6f4ea;
+    color: #0b6b47;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Notice & Announcement Section */
+.notice-section {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.notice-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.notice-board {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 1.8rem;
+}
+
+.notice-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+}
+
+.notice-item:last-child {
+    border-bottom: none;
+}
+
+.notice-date {
+    background-color: #0b6b47;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+    min-width: 60px;
+}
+
+.notice-info h4 {
+    font-size: 1rem;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.notice-info p {
+    font-size: 0.88rem;
+    color: #64748b;
+}
+
+/* Call to Action Banner */
+.cta-banner {
+    background-color: #0b6b47;
+    color: #ffffff;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+    margin: 3rem auto 5rem auto;
+}
+
+.cta-banner h2 {
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.cta-banner p {
+    color: #cbd5e1;
+    max-width: 600px;
+    margin: 0 auto 1.8rem auto;
+    font-size: 1rem;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .welcome-grid,
+    .notice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}

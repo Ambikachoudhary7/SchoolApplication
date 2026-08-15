@@ -20,16 +20,17 @@
                 <img src="logo.jpg" alt="Rose Public School Logo" class="site-logo">
                 <span class="logo-text">ROSE PUBLIC SCHOOL</span>
             </a>
-
-            <ul class="nav-links">
+            <button class="menu-btn" id="menuBtn" onclick="toggleMobileMenu(event)">☰</button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="About.html" class="nav-link">About</a></li>
                 <li><a href="Admission.html" class="nav-link">Admission</a></li>
                 <li><a href="Acadmics.html" class="nav-link">Academics</a></li>
                 <li><a href="Faculty.html" class="nav-link">Faculty</a></li>
-                <li><a href="Gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
                 <li><a href="Facilities.html" class="nav-link">Facilities</a></li>
                 <li><a href="Contact.html" class="nav-link">Contact</a></li>
+                <li class="mobile-only-btn"><a href="Admission.html" class="mobile-apply">Apply for Admission</a></li>
             </ul>
 
             <div class="nav-right">
@@ -101,27 +102,6 @@
     <footer class="site-footer">
         <p>© 2026 Rose Public School. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        function applyFilter(btnElement, category) {
-
-            var allBtns = document.querySelectorAll('.filter-btn');
-            for (var i = 0; i < allBtns.length; i++) {
-                allBtns[i].classList.remove('active');
-            }
-
-            btnElement.classList.add('active');
-
-            var allCards = document.querySelectorAll('.gallery-card');
-            for (var j = 0; j < allCards.length; j++) {
-                if (category === 'all' || allCards[j].classList.contains(category)) {
-                    allCards[j].style.setProperty('display', 'block', 'important');
-                } else {
-                    allCards[j].style.setProperty('display', 'none', 'important');
-                }
-            }
-        }
-    </script>
 
 </body>
 

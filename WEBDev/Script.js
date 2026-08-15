@@ -1,3 +1,29 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".dashboard-card");
+    const info = document.querySelector(".dashboard-info");
+
+    cards.forEach((card, index) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(25px)";
+
+        setTimeout(() => {
+            card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+        }, 100 + index * 100);
+    });
+
+    if (info) {
+        info.style.opacity = "0";
+        info.style.transform = "translateY(20px)";
+
+        setTimeout(() => {
+            info.style.transition = "opacity 0.7s ease, transform 0.7s ease";
+            info.style.opacity = "1";
+            info.style.transform = "translateY(0)";
+        }, 850);
+    }
+});
 const cards = document.querySelectorAll(".topper-card");
 
 cards.forEach(card => {

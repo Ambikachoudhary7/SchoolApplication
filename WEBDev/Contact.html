@@ -21,8 +21,8 @@
                 <img src="logo.jpg" alt="Rose Public School Logo" class="site-logo">
                 <span class="logo-text">ROSE PUBLIC SCHOOL</span>
             </a>
-
-            <ul class="nav-links">
+            <button class="menu-btn" id="menuBtn" onclick="toggleMobileMenu(event)">☰</button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="About.html" class="nav-link">About</a></li>
                 <li><a href="Admission.html" class="nav-link">Admission</a></li>
@@ -30,7 +30,8 @@
                 <li><a href="Faculty.html" class="nav-link">Faculty</a></li>
                 <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
                 <li><a href="Facilities.html" class="nav-link">Facilities</a></li>
-                <li><a href="Contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="Contact.html" class="nav-link">Contact</a></li>
+                <li class="mobile-only-btn"><a href="Admission.html" class="mobile-apply">Apply for Admission</a></li>
             </ul>
 
             <div class="nav-right">
@@ -198,29 +199,6 @@
             <p>&copy; 2026 Rose Public School. All Rights Reserved.</p>
         </div>
     </footer>
-    <script>
-        document.getElementById('whatsapp-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            const phoneNumber = "6205858139";
-
-            const name = document.getElementById('fullName').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const subject = document.getElementById('subject').value; // Admission or Feedback
-            const message = document.getElementById('message').value;
-
-            const whatsappMessage = `*New ${subject} Inquiry*%0A%0A` +
-                `*Name:* ${encodeURIComponent(name)}%0A` +
-                `*Email:* ${encodeURIComponent(email)}%0A` +
-                `*Phone:* ${encodeURIComponent(phone)}%0A` +
-                `*Subject:* ${encodeURIComponent(subject)}%0A` +
-                `*Message:* ${encodeURIComponent(message)}`;
-
-            const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
-            window.open(whatsappURL, '_blank');
-        });
-    </script>
 </body>
 
 </html>

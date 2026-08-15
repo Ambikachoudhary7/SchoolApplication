@@ -1,0 +1,257 @@
+/* ==========================================
+   ABOUT PAGE SPECIFIC STYLES ONLY
+   (Header, Nav, Typography & Footer are in common.css)
+   ========================================== */
+
+/* Hero Section */
+.about-hero {
+    background-color: #0b6b47;
+    color: #ffffff;
+    text-align: center;
+    padding: 7rem 1.5rem 4rem 1.5rem;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    max-width: 650px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* About Overview Section */
+.about-overview {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.overview-text h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.overview-text p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.overview-image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.overview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Vision & Mission Section */
+.vision-mission-section {
+    padding: 4rem 0 5rem 0;
+    background-color: #f8fafc;
+}
+
+.vm-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.vm-card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.vm-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.vm-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #e6f4ea;
+    color: #0b6b47;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.vm-card h3 {
+    font-size: 1.4rem;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.vm-card p {
+    font-size: 0.93rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Core Values Section */
+.core-values-section {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.value-item {
+    background-color: #f8fafc;
+    padding: 1.8rem 1.2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-4px);
+    border-color: #0b6b47;
+}
+
+.value-item i {
+    font-size: 1.8rem;
+    color: #f59e0b;
+    margin-bottom: 0.8rem;
+}
+
+.value-item h4 {
+    font-size: 1.1rem;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.value-item p {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* History / Milestones Section */
+.history-section {
+    padding: 4rem 0 5rem 0;
+    background-color: #f8fafc;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto 0 auto;
+    padding-left: 2rem;
+    border-left: 3px solid #0b6b47;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.65rem;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #f59e0b;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 2px #0b6b47;
+}
+
+.timeline-year {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #0b6b47;
+    margin-bottom: 0.2rem;
+}
+
+.timeline-item h4 {
+    font-size: 1.15rem;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.timeline-item p {
+    font-size: 0.88rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+    .overview-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .vm-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        padding-left: 1.2rem;
+    }
+
+    .timeline-item {
+        padding-left: 1rem;
+    }
+
+    .timeline-item::before {
+        left: -1.85rem;
+    }
+}

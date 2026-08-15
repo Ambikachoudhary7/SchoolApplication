@@ -77,7 +77,7 @@ body {
         url(image/schoolimag.jpg) center/cover no-repeat; */
     color: var(--white);
     text-align: center;
-    padding: 5rem 1rem;
+    padding: 7rem 1.5rem 4rem 1.5rem;
 }
 
 .hero-content h1 {
