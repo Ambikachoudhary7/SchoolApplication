@@ -18,27 +18,91 @@
 
             <a href="index.html" class="logo-wrapper">
                 <img src="logo.jpg" alt="Rose Public School Logo" class="site-logo">
-                <span class="logo-text">ROSE PUBLIC SCHOOL</span>
+
+                <span class="logo-text">
+                    ROSE PUBLIC SCHOOL
+                </span>
             </a>
-            <button class="menu-btn" id="menuBtn" onclick="toggleMobileMenu(event)">☰</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="About.html" class="nav-link">About</a></li>
-                <li><a href="Admission.html" class="nav-link">Admission</a></li>
-                <li><a href="Acadmics.html" class="nav-link">Academics</a></li>
-                <li><a href="Faculty.html" class="nav-link">Faculty</a></li>
-                <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
-                <li><a href="Facilities.html" class="nav-link">Facilities</a></li>
-                <li><a href="Contact.html" class="nav-link">Contact</a></li>
-                <li class="mobile-only-btn"><a href="Admission.html" class="mobile-apply">Apply for Admission</a></li>
+
+            <button class="menu-btn" id="menuBtn" onclick="toggleMobileMenu(event)" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html" class="nav-link">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="About.html" class="nav-link">
+                        <i class="fa-solid fa-school"></i>
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Admission.html" class="nav-link">
+                        <i class="fa-solid fa-file-signature"></i>
+                        Admission
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Acadmics.html" class="nav-link">
+                        <i class="fa-solid fa-book-open"></i>
+                        Academics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Faculty.html" class="nav-link">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        Faculty
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Gallery.html" class="nav-link">
+                        <i class="fa-solid fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Facilities.html" class="nav-link active">
+                        <i class="fa-solid fa-building"></i>
+                        Facilities
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Contact.html" class="nav-link">
+                        <i class="fa-solid fa-phone"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="mobile-apply">
+                    <a href="Admission.html" class="nav-link">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        Apply Now
+                    </a>
+                </li>
+
             </ul>
 
             <div class="nav-right">
-                <a href="Admission.html" class="apply-btn">Apply Now</a>
+                <a href="Admission.html" class="apply-btn">
+                    Apply Now
+                </a>
             </div>
 
         </nav>
     </header>
+    <div class="menu-overlay" id="menuOverlay"></div>
 
     <section class="hero-section">
         <div class="hero-content">
@@ -154,7 +218,7 @@
             </div>
         </div>
     </section>
-
+    <script src="Script.js"></script>
 </body>
 
 </html>

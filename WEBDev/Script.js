@@ -1,29 +1,89 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".dashboard-card");
-    const info = document.querySelector(".dashboard-info");
+function toggleMobileMenu(event) {
 
-    cards.forEach((card, index) => {
-        card.style.opacity = "0";
-        card.style.transform = "translateY(25px)";
+    if (event) {
+        event.stopPropagation();
+    }
 
-        setTimeout(() => {
-            card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
-        }, 100 + index * 100);
+    const menu = document.querySelector(".nav-links");
+    const button = document.querySelector(".menu-btn");
+    const icon = button ? button.querySelector("i") : null;
+    const overlay = document.getElementById("menuOverlay");
+
+    if (!menu || !button) return;
+
+    const isOpen = menu.classList.toggle("active-menu");
+
+    if (overlay) {
+        overlay.classList.toggle("active", isOpen);
+    }
+
+    if (isOpen) {
+
+        if (icon) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+        }
+
+        button.setAttribute("aria-label", "Close Menu");
+
+    } else {
+
+        if (icon) {
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        }
+
+        button.setAttribute("aria-label", "Open Menu");
+    }
+}
+
+
+function closeMobileMenu() {
+
+    const menu = document.querySelector(".nav-links");
+    const button = document.querySelector(".menu-btn");
+    const icon = button ? button.querySelector("i") : null;
+    const overlay = document.getElementById("menuOverlay");
+
+    if (menu) {
+        menu.classList.remove("active-menu");
+    }
+
+    if (overlay) {
+        overlay.classList.remove("active");
+    }
+
+    if (icon) {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    }
+
+    if (button) {
+        button.setAttribute("aria-label", "Open Menu");
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const overlay = document.getElementById("menuOverlay");
+
+    if (overlay) {
+        overlay.addEventListener("click", function () {
+            closeMobileMenu();
+        });
+    }
+
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+
+        link.addEventListener("click", function () {
+            closeMobileMenu();
+        });
+
     });
 
-    if (info) {
-        info.style.opacity = "0";
-        info.style.transform = "translateY(20px)";
-
-        setTimeout(() => {
-            info.style.transition = "opacity 0.7s ease, transform 0.7s ease";
-            info.style.opacity = "1";
-            info.style.transform = "translateY(0)";
-        }, 850);
-    }
 });
+
 const cards = document.querySelectorAll(".topper-card");
 
 cards.forEach(card => {
@@ -175,3 +235,24 @@ document.querySelector('.enquiry-form').addEventListener('submit', function (e) 
     const whatsappURL = `https://wa.me/${schoolWhatsAppNumber}?text=${message}`;
     window.open(whatsappURL, '_blank');
 });
+
+function applyFilter(button, category) {
+
+    document.querySelectorAll(".filter-btn").forEach(function (btn) {
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    const cards = document.querySelectorAll(".gallery-card");
+
+    cards.forEach(function (card) {
+
+        if (category === "all" || card.classList.contains(category)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+}
