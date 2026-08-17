@@ -596,3 +596,55 @@ body {
         text-align: center;
     }
 }
+
+.developer-credit {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px 25px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.developer-credit div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.developer-credit span {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+.developer-credit strong {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.developer-credit a {
+    font-size: 11px;
+    color: #f97316;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.developer-credit a:hover {
+    color: #fb923c;
+}
+
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.linkedin-link i {
+    font-size: 14px;
+}
