@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="Admission.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Admissions - Rose Public School</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+
+            <a href="index.html" class="logo-wrapper">
+                <img src="logo.jpg" alt="Rose Public School Logo" class="site-logo">
+
+                <span class="logo-text">
+                    ROSE PUBLIC SCHOOL
+                </span>
+            </a>
+
+            <button class="menu-btn" id="menuBtn" onclick="toggleMobileMenu(event)" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html" class="nav-link">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="About.html" class="nav-link">
+                        <i class="fa-solid fa-school"></i>
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Admission.html" class="nav-link active">
+                        <i class="fa-solid fa-file-signature"></i>
+                        Admission
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Acadmics.html" class="nav-link">
+                        <i class="fa-solid fa-book-open"></i>
+                        Academics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Faculty.html" class="nav-link">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        Faculty
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Gallery.html" class="nav-link">
+                        <i class="fa-solid fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Facilities.html" class="nav-link">
+                        <i class="fa-solid fa-building"></i>
+                        Facilities
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Contact.html" class="nav-link">
+                        <i class="fa-solid fa-phone"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="mobile-apply">
+                    <a href="Admission.html" class="nav-link">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        Apply Now
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="nav-right">
+                <a href="Admission.html" class="apply-btn">
+                    Apply Now
+                </a>
+            </div>
+
+        </nav>
+    </header>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <section class="admissions-hero">
+        <div class="hero-content">
+            <h1>Admissions</h1>
+            <p>Join the Rose Public School family. Discover our admission process, requirements, and fee structure.</p>
+        </div>
+    </section>
+
+
+    <section class="admissions-section">
+        <div class="admissions-container">
+
+            <div class="process-side">
+                <div class="section-title-box">
+                    <div class="title-icon">
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    <h2>Admission Process</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-item right-step">
+                        <div class="badge-num">01</div>
+                        <div class="step-card">
+                            <h3>Registration</h3>
+                            <p>Fill out the online enquiry form or visit the school office to register your child.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left-step">
+                        <div class="badge-num">02</div>
+                        <div class="step-card">
+                            <h3>Interaction/Test</h3>
+                            <p>An informal interaction for Pre-Primary and a basic assessment test for higher classes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right-step">
+                        <div class="badge-num">03</div>
+                        <div class="step-card">
+                            <h3>Document Verification</h3>
+                            <p>Submit the required documents for verification after selection.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left-step">
+                        <div class="badge-num">04</div>
+                        <div class="step-card">
+                            <h3>Fee Payment</h3>
+                            <p>Complete the admission process by paying the admission fees.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="enquiry-card-wrapper">
+                <div class="enquiry-card">
+                    <div class="card-accent-bar"></div>
+                    <h2>Admission Enquiry</h2>
+
+                    <form class="enquiry-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="studentName">Student Name *</label>
+                            <input type="text" id="studentName" name="studentName" placeholder="Student Full Name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="admissionClass">Admission for Class *</label>
+                            <select id="admissionClass" required>
+                                <option value="" disabled selected>Select Class</option>
+                                <option value="Pre-Primary">Pre-Primary</option>
+                                <option value="Class 1">Class 1</option>
+                                <option value="Class 2">Class 2</option>
+                                <option value="Class 3">Class 3</option>
+                                <option value="Class 4">Class 4</option>
+                                <option value="Class 5">Class 5</option>
+                                <option value="Class 6">Class 6</option>
+                                <option value="Class 7">Class 7</option>
+                                <option value="Class 8">Class 8</option>
+                                <option value="Class 9">Class 9</option>
+                                <option value="Class 10">Class 10</option>
+                                <option value="Class 11">Class 11</option>
+                                <option value="Class 12">Class 12</option>
+                            </select>
+                        </div>
+
+                        <div class="section-divider-label">PARENT DETAILS</div>
+
+                        <div class="form-group">
+                            <label for="parentName">Parent's Name *</label>
+                            <input type="text" id="parentName" placeholder="Parent's Full Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address *</label>
+                            <input type="text" id="address" placeholder="Full Residential Address" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" placeholder="+91 9876543210" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" placeholder="email@example.com" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Enquiry</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <p class="faq-subtitle">Find answers to common questions about our admission process.</p>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>What is the minimum age for Nursery admission?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-body">
+                        <p>The minimum age for Nursery admission is 3+ years as of March 31st of the academic year.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>Is there a sibling discount?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-body">
+                        <p>Yes, we offer a sibling discount on tuition fees for the second child onwards.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item active">
+                    <button class="faq-header">
+                        <span>What are the school timings?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-body">
+                        <p>For Pre-Primary: 8:30 AM to 12:30 PM. For Class 1 onwards: 7:30 AM to 2:00 PM. Timings may
+                            vary slightly during winter.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>Does the school provide transport facilities?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-body">
+                        <p>Yes, school bus and van transport facilities are available covering all major nearby routes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>When does the admission process begin?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-body">
+                        <p>The admission process generally starts in November for the upcoming academic session.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="Script.js"></script>
+</body>
+
+</html>
