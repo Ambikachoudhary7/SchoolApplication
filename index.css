@@ -159,6 +159,16 @@ body {
     border: 1px solid var(--border-light);
 }
 
+.leadership.active .message-card {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.leadership-title {
+    cursor: pointer;
+}
+
 .left-message {
     flex: 0 0 280px;
 }
@@ -648,10 +658,6 @@ body {
 .linkedin-link i {
     font-size: 14px;
 }
-
-/* =========================
-   INDEX PAGE RESPONSIVE FIX
-========================= */
 
 html,
 body {
