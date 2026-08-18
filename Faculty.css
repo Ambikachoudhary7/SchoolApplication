@@ -209,11 +209,6 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
     .leader-card {
         flex-direction: column;
         text-align: center;

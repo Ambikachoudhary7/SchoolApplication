@@ -66,7 +66,6 @@ body {
     color: var(--secondary-color);
 }
 
-/* Timeline Process */
 .timeline {
     position: relative;
     padding-left: 2rem;
@@ -123,7 +122,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* Form Section */
 .enquiry-card {
     background: var(--white);
     padding: 2rem;
@@ -292,11 +290,6 @@ body {
 
     .form-row {
         grid-template-columns: 1fr;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        gap: 1rem;
     }
 
     .hero-content h1 {
