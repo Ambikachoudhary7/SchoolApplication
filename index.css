@@ -648,3 +648,156 @@ body {
 .linkedin-link i {
     font-size: 14px;
 }
+
+/* =========================
+   INDEX PAGE RESPONSIVE FIX
+========================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.hero,
+.stats,
+.leadership,
+.choose,
+.topper,
+.gallery-section,
+.news-section,
+.cta-section {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Tablet: 768px - 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .hero {
+        min-height: 75vh;
+        padding: 6rem 2rem 4rem;
+    }
+
+    .stats {
+        padding: 0 4%;
+        margin-top: -50px;
+    }
+
+    .stat-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .message-card {
+        width: 92%;
+        padding: 30px;
+        gap: 25px;
+    }
+
+    .choose,
+    .topper,
+    .news-section {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .slide-track img {
+        width: 260px;
+        height: 180px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .hero {
+        min-height: 70vh;
+        width: 100%;
+        padding: 6rem 1rem 3rem;
+    }
+
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .overlay p {
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+    }
+
+    .btns {
+        gap: 10px;
+    }
+
+    .apply,
+    .discover {
+        padding: 11px 22px;
+        font-size: 0.9rem;
+    }
+
+    .stats {
+        width: 100%;
+        padding: 0 12px;
+        margin-top: -35px;
+    }
+
+    .stat-card {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 28px 15px;
+    }
+
+    .stat-box h2 {
+        font-size: 1.8rem;
+    }
+
+    .leadership,
+    .choose,
+    .topper,
+    .news-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .message-card {
+        width: 100%;
+        padding: 25px 18px;
+    }
+
+    .left-message {
+        width: 160px;
+    }
+
+    .right-message h1 {
+        font-size: 1.6rem;
+    }
+
+    .choose-container,
+    .topper-container,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topper-card {
+        height: 380px;
+    }
+
+    .news-header {
+        align-items: flex-start;
+    }
+
+    .cta-section {
+        padding: 60px 15px;
+    }
+
+    .developer-credit {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 18px 10px;
+    }
+}
